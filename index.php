@@ -20,9 +20,9 @@ if( $connection && $connection->connect_error ) {
 
 $sql =
     "
-    SELECT id, nome, price
-      FROM pagamenti
-       WHERE price > 600
+    SELECT id, status , price
+    FROM pagamenti
+    WHERE price > '600'
     ";
 
 
